@@ -1,0 +1,23 @@
+{
+  "name": "aula_ebac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatriciaCompass/aula_ebac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatriciaCompass/aula_ebac/issues"
+  },
+  "homepage": "https://github.com/PatriciaCompass/aula_ebac#readme",
+  "dependencies": {
+    "cypress": "^13.9.0"
+  }
+}
