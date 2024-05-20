@@ -25,7 +25,7 @@ describe('Funcionalidade: Login', () => {
         cy.get('.woocommerce-error').should('contain', 'Endereço de e-mail desconhecido. Verifique novamente ou tente seu nome de usuário.')
     });
 
-    it.only('Deve fazer login com sucesso - Usando massa de dados', () => {
+    it('Deve fazer login com sucesso - Usando massa de dados', () => {
             cy.get('#username').type(perfil.usuario)
             cy.get('#password').type(perfil.senha)
             cy.get('.woocommerce-form > .button').click()
@@ -33,12 +33,17 @@ describe('Funcionalidade: Login', () => {
         
     });
 
-    it.only('Deve fazer login com sucesso - Usando fixture', () => {
+    it('Deve fazer login com sucesso - Usando fixture', () => {
         cy.fixture('perfil').then(dados => {
             cy.get('#username').type(dados.usuario)
             cy.get('#password').type(dados.senha, { log: false })
             cy.get('.woocommerce-form > .button').click()
             cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, pati (não é pati? Sair)')
         });
-    })
+    });
+
+    it('Deve fazer login com sucesso - Usando Comandos Customizados', () => {
+        cy.login('pati@teste.com', 'Senha@123')
+        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, pati (não é pati? Sair)')
+    });
 });

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run --browser chrome"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,6 @@
   "homepage": "https://github.com/PatriciaCompass/aula_ebac#readme",
   "dependencies": {
     "@faker-js/faker": "^8.4.1",
-    "cypress": "^13.9.0"
+    "cypress": "^13.6.0"
   }
 }
