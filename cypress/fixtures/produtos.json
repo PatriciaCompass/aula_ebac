@@ -2,6 +2,21 @@
     {
         "nomeProduto": "Ingrid Running Jacket",
         "tamanho": "XS",
-        "cor":"Orange"
+        "cor":"Orange",
+        "quantidade": 3
+    },
+
+    {
+        "nomeProduto": "Augusta Pullover Jacket",
+        "tamanho": "S",
+        "cor":"Blue",
+        "quantidade": 5
+    },
+
+    {
+        "nomeProduto": "Circe Hooded Ice Fleece",
+        "tamanho": "M",
+        "cor":"Gray",
+        "quantidade": 1
     }
 ]

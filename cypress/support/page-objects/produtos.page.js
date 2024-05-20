@@ -5,7 +5,7 @@ class produtosPage {
     }
 
     buscarProduto(nomeProduto) {
-        cy.get('[name="s"').eq(1).type(nomeProduto)
+        cy.get('[name="s"]').eq(1).type(nomeProduto)
         cy.get('.button-search').eq(1).click()
     }
 
@@ -21,10 +21,10 @@ class produtosPage {
         cy.visit(`produtos/${urlFormatada}`)
     }
 
-    addProdutoCarrinho() {
-        cy.get('.button-variable-item-M').click()
-        cy.get('.button-variable-item-Blue').click()
-        cy.get('.input-text').clear().type(1)
+    addProdutoCarrinho(tamanho, cor, quantidade) {
+        cy.get('.button-variable-item-' + tamanho).click()
+        cy.get(`.button-variable-item-${cor}`).click()
+        cy.get('.input-text').clear().type(quantidade)
         cy.get('.single_add_to_cart_button').click()
     }
 }
