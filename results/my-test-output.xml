@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="9.783" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2024-05-20T21:33:11" tests="0" file="cypress\e2e\3-loja-ebac\produtos.cy.js" time="0.000" failures="0">
-  </testsuite>
-  <testsuite name="Funcionalidade: Produtos" timestamp="2024-05-20T21:33:11" tests="1" time="9.778" failures="0">
-    <testcase name="Funcionalidade: Produtos Deve adicionar o produto ao carrinho buscando da massa de dados" time="9.688" classname="Deve adicionar o produto ao carrinho buscando da massa de dados">
-    </testcase>
-  </testsuite>
-</testsuites>
